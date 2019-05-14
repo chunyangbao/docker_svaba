@@ -6,7 +6,7 @@ WORKDIR /svaba
 #### Basic image utilities
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y build-essential zlib1g-dev git && \
+    apt-get install -y build-essential zlib1g-dev libbz2-dev git && \
     apt-get -y clean && \
     apt-get -y autoclean && \
     apt-get -y autoremove
